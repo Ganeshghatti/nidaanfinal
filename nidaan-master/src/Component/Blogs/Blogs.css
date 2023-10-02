@@ -1,0 +1,174 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.blogsContainer {
+    padding: 5%;
+    /* font-family: 'Poppins'; */
+}
+
+.blogsHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.395vw;
+    margin-bottom: 5%;
+
+    >h1 {
+        color: #051052;
+        font-size: 2.8vw;
+        font-weight: 600;
+    }
+
+    >p {
+        background-color: #0CC0DF1F;
+        font-size: 1.6vw;
+        font-weight: 500;
+        padding: 0.8%;
+        color: #008FBE;
+        border-radius: 50%;
+    }
+}
+
+.blogsHero {
+    display: flex;
+    /* gap: 1%; */
+}
+
+.blogsHolder {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-right: 0.5%;
+}
+
+.blog {
+    display: flex;
+    gap: 2%;
+    /* height: 50%; */
+
+    >img {
+        max-width: 30%;
+        object-fit: cover;
+    }
+}
+
+.blogContent {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+
+.blogTitle {
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.558vw;
+}
+
+.blogSummary {
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.953vmax;
+    margin-bottom: 1.395vw;
+}
+
+.blogInfo {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #666666;
+    line-height: 1.813vmax;
+
+}
+
+
+
+
+.rBlogs {
+    width: 25%;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 1.395vw;
+    display: flex;
+    flex-direction: column;
+
+    >h3 {
+        font-size: 1.4vw;
+        font-weight: 600;
+        /* line-height: 40px; */
+        color: #219653;
+        /* margin-bottom: ; */
+    }
+}
+
+.rBlogsHolder{
+    margin-bottom: 1.674vw;
+}
+
+.rBlog {
+    margin: 1.674vw 0;
+}
+
+.rBlogTitle {
+    /* font-family: Poppins; */
+    font-size: 1.1vw;
+    font-weight: 600;
+    line-height: 1.813vmax;
+    color: #111111;
+    text-decoration: underline;
+    margin-bottom: 0.558vw;
+}
+
+.rBlogDate {
+    /* font-family: Poppins; */
+    font-size: 0.98vw;
+    font-weight: 500;
+    line-height: 1.813vmax;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+    margin-right: 0.558vw;
+}
+
+.rBlogTag {
+    /* font-family: Poppins; */
+    font-size: 0.98vw;
+    font-weight: 500;
+    line-height: 1.813vmax;
+    color: #333333;
+    background-color: #EDEDED;
+    border-radius: 2.092vw;
+    padding: 0.279vw 0.837vw;
+    display: inline-block;
+}
+
+.rBlogTopicsHolder {
+    >h4 {
+        /* font-family: Poppins; */
+        font-size: 0.98vw;
+        font-weight: 600;
+        line-height: 1.674vmax;
+        color: #219653;
+        margin-bottom: 1.674vw;
+        
+    }
+}
+
+.rBlogTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.837vw;
+}
+
+.rTag {
+    /* font-family: Poppins; */
+    font-size: 0.98vw;
+    font-weight: 500;
+    line-height: 1.813vmax;
+    color: #3D3680;
+    background-color: #EDE5FF;
+    border-radius: 566px;
+    padding: 0.279vw 0.837vw;
+    
+}

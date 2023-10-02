@@ -1,0 +1,313 @@
+/* * {
+    border: solid red 1px;
+} */
+
+.navBar {
+    height: 4.583vw;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9.722vw;
+    /* background-color: white; */
+
+    /* glassmorphism */
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: sticky;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 100;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.navLogo {
+    width: 9.028vw;
+    height: 1.389vw;
+}
+
+.navLinkConatiner {
+    width: 76.389vw;
+    padding-right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLink {
+    display: flex;
+    gap: 2.778vw;
+    height: 2.083vw;
+
+    >a {
+        text-decoration: none;
+        color: #46444d;
+        font-size: 1.111vw;
+        font-weight: 600;
+        line-height: 1.667vw;
+
+
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+    >a:hover {
+        color: #051052;
+        border-bottom: #0CC0DF 3px solid;
+    }
+}
+
+.registerSection {
+    display: flex;
+    align-items: center;
+    gap: 1.389vw;
+}
+
+.signInBtn {
+    border: none;
+    color: #051052;
+    background-color: transparent;
+
+    font-family: Inter;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.667vw;
+}
+
+.registerBtn {
+    border: none;
+    background-color: #0CC0DF;
+    color: #051052;
+    padding: 0.833vw;
+    border-radius: 0.208vw;
+
+    font-family: Inter;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.667vw;
+
+}
+
+.menuBtn,
+.crossBtn {
+    width: 2.218vw;
+    height: 2.218vw;
+    display: none;
+}
+
+
+@media screen and (max-device-width: 500px) {
+    .navHiddenContainer {
+        display: none;
+    }
+
+    .navBar {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4.267vw;
+        height: auto;
+        padding-top: 2.267vw;
+        overflow: unset;
+
+
+        >a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .navLogo {
+        height: 5.333vw;
+        width: 34.667vw;
+    }
+
+    .menuBtn {
+        display: block;
+        height: 8.533vw;
+        width: 8.533vw;
+    }
+
+    .crossBtn {
+        height: 6vw;
+        width: 6vw;
+        z-index: 1;
+    }
+
+    .navLinkConatiner {
+        position: absolute;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 12.8vw;
+        background-color: white;
+        left: 0%;
+        top: 0%;
+        height: fit-content;
+        width: 100%;
+        padding: 10.667vw 4.267vw;
+        z-index: 1;
+        box-shadow: 0px 2.667vw 6.4vw #888888;
+    }
+
+    .navLink {
+        flex-direction: column;
+        align-items: center;
+        gap: 8.533vw;
+        height: unset;
+
+        >a {
+            color: #051052;
+            /* font-family: Poppins; */
+            font-size: 6.933vw;
+            font-weight: 600;
+            line-height: 10.4vw;
+            text-align: center;
+        }
+    }
+
+    .registerSection {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .signInBtn {
+        border: none;
+        color: #051052;
+        /* background-color: white; */
+        padding: 3.2vw;
+        /* font-family: Poppins; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: 10.4vw;
+        text-align: center;
+    }
+
+    .registerBtn {
+        border: none;
+        background-color: #0CC0DF;
+        color: #051052;
+        padding: 3.2vw;
+        border-radius: 2.133vw;
+
+        /* font-family: Poppins; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: 10.4vw;
+        text-align: center;
+
+    }
+
+    .open {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .navHiddenContainer {
+        display: none;
+    }
+
+    .navBar {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4.267vw;
+        height: auto;
+        padding-top: 1.267vw;
+        overflow: unset;
+
+        >a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .navLogo {
+        height: 4.333vw;
+        width: 21.667vw;
+    }
+
+    .menuBtn {
+        display: block;
+        height: 5.533vw;
+        width: 5.533vw;
+    }
+
+    .crossBtn {
+        height: 4vw;
+        width: 4vw;
+        z-index: 1;
+    }
+
+    .navLinkConatiner {
+        position: absolute;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 6.25vw;
+        background-color: white;
+        left: 0%;
+        top: 0%;
+        height: fit-content;
+        width: 100%;
+        padding: 5.208vw 2.083vw;
+        z-index: 1;
+        box-shadow: 0px 1.302vw 3.125vw #888888;
+    }
+
+    .navLink {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.604vw;
+        height: unset;
+
+        >a {
+            color: #051052;
+            /* font-family: Poppins; */
+            font-size: 3.933vw;
+            font-weight: 600;
+            line-height: 6.4vw;
+            text-align: center;
+        }
+    }
+
+    .registerSection {
+        width: 100%;
+        justify-content: center;
+        gap: 5.208vw;
+    }
+
+    .signInBtn {
+        border: none;
+        color: #051052;
+        /* background-color: white; */
+        padding: 1.563vw;
+        /* font-family: Poppins; */
+        font-size: 3.933vw;
+        font-weight: 600;
+        line-height: 6.4vw;
+        text-align: center;
+    }
+
+    .registerBtn {
+        border: none;
+        background-color: #0CC0DF;
+        color: #051052;
+        padding: 1.563vw;
+        border-radius: 1.042vw;
+
+        /* font-family: Poppins; */
+        font-size: 3.933vw;
+        font-weight: 600;
+        line-height: 6.4vw;
+        text-align: center;
+
+    }
+
+    .open {
+        display: block;
+    }
+}
